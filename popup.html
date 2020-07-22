@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Recipe Helper</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  </head>
+  <style>
+      h1 {
+          font-size: 2rem;
+      }
+      body {
+          padding: 2rem;
+          width: 400px;
+          height: 300px;
+          right: 0;
+      } 
+      .timer {
+        width: 400px;
+      }
+      .count {
+          background-color: orange;
+          width: 20px;
+          height: 20px;
+      }
+      .mdl-card__title, .mdl-card__supporting-text {
+        padding: 10px;
+      }
+
+      .m3 {
+          margin: 10px 0;
+      }
+
+      .button-timer {
+        margin-left: 10px;
+      }
+
+  </style>
+  <body>
+    <h1>Time your recipes!</h1>
+  <main>
+    
+  </main>
+ 
+    <form id="form">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Text...</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+            <label class="mdl-textfield__label" for="sample4">Number...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <div>
+          <button id="addNew" class="m3 mdl-button mdl-js-button mdl-button--fab">
+            <i class="material-icons">add</i>
+          </button>
+        </div>
+    </form>
+  
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  </body>
+</html>
